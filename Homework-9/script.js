@@ -1,22 +1,13 @@
-// Написати цикли, які зможуть:
-
-// +-Вивести на сторінку в один рядок через кому числа від 10 до 20.
-// +Вивести квадрати чисел від 10 до 20.
-// +Вивести таблицю множення на 7.
-// +Знайти суму всіх цілих чисел від 1 до 15.
-// +Знайти добуток усіх цілих чисел від 15 до 35.
-// +Знайти середнє арифметичне всіх цілих чисел від 1 до 500.
-// +Вивести суму лише парних чисел в діапазоні від 30 до 80.
-// +Вивести всі числа в діапазоні від 100 до 200 кратні 3.
-// +-Дано натуральне число. Знайти та вивести на сторінку всі його дільники.
-// +-Визначити кількість його парних дільників.
-// +-Знайти суму його парних дільників.
-// +Надрукувати повну таблицю множення від 1 до 10.
-
 console.log(`Numbers from 10 to 20: `);
+let str = '';
 for (let i = 10; i <= 20; i++) {
-    console.log(`${i}, `);
+    if (i === 20) {
+        str += i;
+    }else {
+        str += i + ", ";
+    }
 }
+console.log(str);
 
 console.log(`\nNumber squares from 10 to 20: `);
 for (let i = 10; i <= 20; i++) {
@@ -70,7 +61,7 @@ for (let i = 100; i <= 200; i++) {
 
 console.log(`\nNatural number, divides of this number, quantity of divides and sum of divides: `);
 let num1 = Number(prompt(`Enter the number: `));
-while (!Number.isInteger(num1)) {
+while (!Number.isInteger(num1) || num1 <= 0) {
     num1 = Number(prompt(`Enter the number: `));
 }
 console.log(`The number is ${num1}`);
