@@ -72,6 +72,7 @@ let num1 = Number(prompt(`Enter the number: `));
 while (!Number.isInteger(num1) || num1 <= 0) {
     num1 = Number(prompt(`Enter the number: `));
 }
+
 console.log(`The number is ${num1}`);
 let quan = 0;
 let sum3 = 0;
@@ -82,6 +83,7 @@ for (let i = 0; i <= num1; i++) {
         sum3 += i;
     }
 }
+
 console.log(`Number of dividers: ${quan}`);
 console.log(`Sum of dividers: ${sum3}`);
 
