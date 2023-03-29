@@ -25,8 +25,10 @@ console.log(str1);
 
 
 console.log(`\nIs number simple?`);
+
 let num1 = Number(prompt(`Enter a number: `));
 let simple = false;
+
 if (num1 === 1 || num1 === 2) {
     simple = true;
 } else {
@@ -39,14 +41,17 @@ if (num1 === 1 || num1 === 2) {
         }
     }
 }
+
 console.log(`${simple 
     ? `${num1} is a simple number` 
     : `${num1} is not a simple number`}`);
 
     
 console.log(`\nIs number three to the power of another number?`);
+
 let num2 = Number(prompt(`Enter a number: `));
 let check = false;
+
 if (num2 === 3) {
     check = true;
 } else {
@@ -58,6 +63,7 @@ if (num2 === 3) {
         }
     }
 }
+
 console.log(`${check 
     ? `Yes, you can get number ${num2} raising the number 3 to the power` 
     : `No, you can not get number ${num2} raising the number 3 to the power`}`);
